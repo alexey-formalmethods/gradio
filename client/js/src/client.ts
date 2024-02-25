@@ -31,7 +31,21 @@ import type {
 import { FileData } from "./upload";
 
 import type { Config } from "./types.js";
-
+if (typeof window !== 'undefined') {
+   // ---
+} else {
+   global.window = {
+	    // Add properties and methods here that you want to simulate
+	    // For example:
+	    document: {},
+	    location: {},
+	    setTimeout: setTimeout,
+	    clearTimeout: clearTimeout,
+	    setInterval: setInterval,
+	    clearInterval: clearInterval,
+	    // Add other properties and methods as needed
+	};
+}
 type event = <K extends EventType>(
 	eventType: K,
 	listener: EventListener<K>
