@@ -1,10 +1,10 @@
 {
-	"name": "@gradio/client",
-	"version": "0.12.1",
+	"name": "@gradio-node/client",
+	"version": "0.12.2",
 	"description": "Gradio API client",
 	"type": "module",
 	"main": "dist/index.js",
-	"author": "",
+	"author": "a.shamshur",
 	"license": "ISC",
 	"exports": {
 		".": {
